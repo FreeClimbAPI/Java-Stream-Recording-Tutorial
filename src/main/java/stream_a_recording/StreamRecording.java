@@ -9,7 +9,7 @@ public class StreamRecording {
   public static void main(String[] args) {
     String accountId = System.getenv("ACCOUNT_ID");
     String authToken = System.getenv("AUTH_TOKEN");
-    String recordingId = "REc03490954166c76d4fc7c895172c0462932a6c4c";
+    String recordingId = "";
 
     streamRecording(recordingId, accountId, authToken);
   }

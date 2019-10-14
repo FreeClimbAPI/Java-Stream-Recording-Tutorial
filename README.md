@@ -1,4 +1,4 @@
-# Node - Stream a Recording Tutorial
+# Java - Stream a Recording Tutorial
 
 This project serves as a guide to help you build an application with Persephony. Specifically, the project will:
 
@@ -10,20 +10,14 @@ To get started using a persephony account, follow the instructions [here](https:
 
 ## Setting up the Tutorial
 
-1. Install the node packages necessary using command:
-
-   ```bash
-   $ yarn install
-   ```
-
-2. Configure environment variables.
+1. Configure environment variables.
 
    | ENV VARIABLE            | DESCRIPTION                                                                                                                                                                             |
    | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | ACCOUNT_ID              | Account ID which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard                                                         |
    | AUTH_TOKEN              | Authentication Token which can be found under [API Keys](https://www.persephony.com/dashboard/portal/account/authentication) in Dashboard                                               |
 
-3. Provide a value for the variable `recordingId` in streamARecording.js. If you have created a recording, you will be able to get the recordingId from the recordings tab in your dashboard. To find out more about recordings, check out the [recording documentation](https://docs.persephony.com/docs/recordings-3)
+2. Provide a value for the variable `recordingId` in streamARecording.js. If you have created a recording, you will be able to get the recordingId from the recordings tab in your dashboard. To find out more about recordings, check out the [recording documentation](https://docs.persephony.com/docs/recordings-3)
 
 ## Building and Runnning the Tutorial
 
