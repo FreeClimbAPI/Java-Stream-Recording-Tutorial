@@ -1,8 +1,8 @@
 package main.java.stream_a_recording;
 
-import com.vailsys.persephony.api.PersyClient;
-import com.vailsys.persephony.KnownSizeInputStream;
-import com.vailsys.persephony.api.PersyException;
+import com.vailsys.freeclimb.api.FreeClimbClient;
+import com.vailsys.freeclimb.KnownSizeInputStream;
+import com.vailsys.freeclimb.api.FreeClimbException;
 
 public class StreamRecording {
 
@@ -15,12 +15,12 @@ public class StreamRecording {
   }
 
   public static void streamRecording(String recordingId, String accountId, String authToken) {
-    PersyClient client;
+    FreeClimbClient client;
     KnownSizeInputStream stream;
 
     try {
-      // Create PersyClient object
-      client = new PersyClient(accountId, authToken);
+      // Create FreeClimbClient object
+      client = new FreeClimbClient(accountId, authToken);
 
       /*
        * Make the request for the recording. Receiving an InputStream in return which
@@ -28,7 +28,7 @@ public class StreamRecording {
        */
       stream = client.recordings.stream(recordingId);
 
-    } catch (PersyException pe) {
+    } catch (FreeClimbException pe) {
       System.out.println(pe.getMessage());
     }
   }

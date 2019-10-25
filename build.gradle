@@ -31,7 +31,14 @@ targetCompatibility = 1.8
 
 dependencies {
     testCompile "junit:junit"
-    compile 'com.github.PersephonyAPI:java-sdk:1.0.0'
+    // TODO: replace with new reference to JitPack (EX: compile 'com.github.PersephonyAPI:java-sdk:1.0.0')
+    compile project(':java-sdk')
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'stream_a_recording.StreamRecording'
+    }
 }
 
 sourceSets {
