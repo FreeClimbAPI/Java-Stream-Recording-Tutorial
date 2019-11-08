@@ -26,7 +26,7 @@ targetCompatibility = 1.8
 
 dependencies {
     testCompile "junit:junit"
-    compile 'com.github.PersephonyAPI:FreeClimb-Java-SDK:1.0.0'
+    compile 'com.github.FreeClimbAPI:java-sdk:1.0.0'
 }
 
 jar {
