@@ -25,8 +25,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    testCompile "junit:junit"
-    compile 'com.github.FreeClimbAPI:java-sdk:1.0.0'
+    testImplementation "junit:junit"
+    implementation 'com.github.FreeClimbAPI:java-sdk:2.0.0'
 }
 
 jar {
