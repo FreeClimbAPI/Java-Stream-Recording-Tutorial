@@ -8,19 +8,19 @@ public class StreamRecording {
 
   public static void main(String[] args) {
     String accountId = System.getenv("ACCOUNT_ID");
-    String authToken = System.getenv("AUTH_TOKEN");
+    String apiKey = System.getenv("API_KEY");
     String recordingId = "";
 
-    streamRecording(recordingId, accountId, authToken);
+    streamRecording(recordingId, accountId, apiKey);
   }
 
-  public static void streamRecording(String recordingId, String accountId, String authToken) {
+  public static void streamRecording(String recordingId, String accountId, String apiKey) {
     FreeClimbClient client;
     KnownSizeInputStream stream;
 
     try {
       // Create FreeClimbClient object
-      client = new FreeClimbClient(accountId, authToken);
+      client = new FreeClimbClient(accountId, apiKey);
 
       /*
        * Make the request for the recording. Receiving an InputStream in return which
